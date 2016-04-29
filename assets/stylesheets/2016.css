@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/Maison-Neue-Book.eot');
+  src: url('../fonts/Maison-Neue-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Maison-Neue-Book.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Maison Neue Mono';
+  src: url('../fonts/Maison-Neue-Mono.eot');
+  src: url('../fonts/Maison-Neue-Mono.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Maison-Neue-Mono.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  color: #FC4D1E;
+  font-family: 'Maison Neue', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+sup {
+  font-size: 70%;
+  margin-left: 0.2em;
+  position: relative;
+  top: -0.4em;
+  vertical-align: baseline
+}
+
+.hide-me {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.outer {
+  background: #FC4D1E url('../images/VS-BG.png') 0 0 repeat-x;
+  background-blend-mode: screen;
+  background-size: 75%;
+  min-height: 40em;
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+  margin: 2em auto;
+  max-width: 30em;
+}
+
+.header {
+  background-color: #FC4D1E;
+  color: #fff;
+  display: flex;
+  font-family: 'Maison Neue Mono', sans-serif;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+.header p {
+  margin: 0;
+}
