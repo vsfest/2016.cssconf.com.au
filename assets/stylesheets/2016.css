@@ -46,6 +46,12 @@ button:active {
   color: #00f;
 }
 
+time, address {
+  font-family: 'Maison Neue Mono', sans-serif;
+  font-size: 0.9em;
+  font-style: normal;
+}
+
 sup {
   font-size: 70%;
   margin-left: 0.2rem;
@@ -222,19 +228,7 @@ input:active {
 .article-link:before {
   content: "\25CF";
 }
-
-time {
+.article-link time {
   display: inline-block;
   width: 18rem;
-  font-family: 'Maison Neue Mono', sans-serif;
-  font-size: 0.9em;
 }
-
-/* time { */
-/*   margin-left: -14rem; */
-/*   position: absolute; */
-/* } */
-/* time:after { */
-/*   content: "\25CF"; */
-/*   margin-left: 2rem; */
-/* } */
