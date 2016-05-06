@@ -71,7 +71,7 @@ sup {
 
 form {
   display: flex;
-  margin: 0;
+  margin: 0 0 2rem;
   width: 75%;
 }
 
@@ -182,7 +182,7 @@ input:active {
   max-width: 50rem;
   mix-blend-mode: luminosity;
   position: fixed;
-  top: 10rem;
+  top: 12rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -199,14 +199,14 @@ input:active {
 }
 
 .content-wrapper {
-  top: -15.5rem;
+  top: -16.5rem;
   position: relative;
   z-index: 1;
 }
 
 .row {
   display: flex;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   mix-blend-mode: multiply;
 }
 .title {
