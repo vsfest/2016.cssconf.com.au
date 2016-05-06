@@ -81,7 +81,7 @@ button {
   border: 0;
   border-bottom: 2px solid;
   box-shadow: none;
-  color: #000;
+  color: inherit;
   display: inline-block;
   font-size: inherit;
   outline: 0;
@@ -93,11 +93,10 @@ input {
   margin-right: 2rem;
 }
 button {
-  color: inherit;
   cursor: pointer;
 }
 input:hover {
-  color: inherit;
+  color: #000;
 }
 input:focus,
 input:active {
