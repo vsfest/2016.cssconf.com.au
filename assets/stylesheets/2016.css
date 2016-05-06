@@ -174,10 +174,10 @@ input:active {
   text-align: center;
 }
 .logo {
-  max-width: 60rem;
+  max-width: 50rem;
   mix-blend-mode: luminosity;
   position: fixed;
-  top: 8rem;
+  top: 10rem;
   left: 50%;
   transform: translateX(-50%);
 }
