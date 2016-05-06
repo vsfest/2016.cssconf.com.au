@@ -116,7 +116,7 @@ input:active {
 .header {
   box-sizing: border-box;
   font-family: 'Maison Neue Mono', sans-serif;
-  font-size: 2rem;
+  font-size: 0.9em;
   left: 0;
   padding: 0;
   position: absolute;
@@ -218,11 +218,29 @@ input:active {
   flex: 2;
 }
 
-time {
-  margin-left: -14rem;
-  position: absolute;
+.article-link {
+  border-top: 2px solid;
+  border-bottom: 0;
+  display: block;
+  /* margin-left: -19rem; */
+  padding: 0.5rem 0;
 }
-time:after {
+.article-link:before {
   content: "\25CF";
-  margin-left: 2rem;
 }
+
+time {
+  display: inline-block;
+  width: 18rem;
+  font-family: 'Maison Neue Mono', sans-serif;
+  font-size: 0.9em;
+}
+
+/* time { */
+/*   margin-left: -14rem; */
+/*   position: absolute; */
+/* } */
+/* time:after { */
+/*   content: "\25CF"; */
+/*   margin-left: 2rem; */
+/* } */
