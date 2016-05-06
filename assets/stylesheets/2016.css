@@ -217,17 +217,36 @@ input:active {
   flex: 2;
 }
 
-.article-link {
+.list {
   border-top: 2px solid;
   border-bottom: 0;
   display: block;
   /* margin-left: -19rem; */
   padding: 0.5rem 0;
 }
-.article-link:before {
+.list time:before {
   content: "\25CF";
+  margin-right: 0.5rem;
 }
-.article-link time {
+.list time {
   display: inline-block;
   width: 18rem;
+}
+
+.sponsor {
+  border: 0;
+  border-top: 2px solid;
+  display: block;
+  padding: 1rem 0 1.5rem;
+}
+.sponsor:hover {
+  color: inherit;
+}
+.sponsor img {
+  max-width: 18rem;
+  opacity: 0.75;
+  transition: opacity 350ms ease-in-out;
+}
+.sponsor:hover img {
+  opacity: 1;
 }
