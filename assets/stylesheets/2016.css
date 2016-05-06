@@ -216,3 +216,17 @@ input:active {
 .title-content {
   flex: 2;
 }
+
+time {
+  margin-left: -14rem;
+  position: absolute;
+}
+time:after {
+  content: "\25CF";
+  margin-left: 2rem;
+}
+/* time:before { */
+/*   content: "\25CF"; */
+/*   position: absolute; */
+/*   margin-left: -2rem; */
+/* } */
