@@ -114,44 +114,38 @@ input:active {
 
 
 .header {
+  background: transparent url('../images/CSS-BG.png') 0 82% repeat-x;
+  background-size: calc(1480px * 0.7) calc(980px * 0.7);
   box-sizing: border-box;
   font-family: 'Maison Neue Mono', sans-serif;
   font-size: 0.9em;
   left: 0;
-  padding: 0;
-  position: absolute;
-  transition: padding 400ms ease-in-out 150ms,
-              transform 400ms ease-in-out;
+  padding: 0 0 2rem;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
+}
+.header a {
+  transition: none;
 }
 .header .wrapper {
   display: flex;
   justify-content: space-between;
 }
 .header .header-inner {
-  background-color: #FC4D1E;
+  background-color: rgba(255, 255, 255, 0);
   color: #fff;
   padding: 1.5rem 0;
-  transition: background-color 250ms ease-in-out,
-              color 250ms ease-in-out;
+  transition: color 450ms ease-in-out,
+              background-color 450ms ease-in-out;
   width: 100%;
 }
-.header--off-screen {
-  transform: translateY(-100%);
-}
-.header--off-screen .header-inner {
-  background-color: #fff;
+.header--fixed .header-inner {
+  background-color: rgba(255, 255, 255, 1);
   color: #FC4D1E;
 }
-.header--fixed {
-  background: transparent url('../images/CSS-BG.png') 0 82% repeat-x;
-  background-size: calc(1480px * 0.7) calc(980px * 0.7);
-  transform: translateY(0);
-  padding-bottom: 2rem;
-  position: fixed;
-}
+
 .header p {
   flex: 1;
   margin: 0;
