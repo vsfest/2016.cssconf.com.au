@@ -17,6 +17,7 @@
 }
 
 html {
+  /* background-color: #FC4D1E; */
   font-size: 62.5%;
 }
 
@@ -241,6 +242,12 @@ input:active {
 }
 .sponsor:hover {
   color: inherit;
+}
+.sponsor:hover:before {
+  content: "\2605";
+  margin-left: -3rem;
+  margin-top: 0.25rem;
+  position: absolute;
 }
 .sponsor img {
   max-width: 18rem;
