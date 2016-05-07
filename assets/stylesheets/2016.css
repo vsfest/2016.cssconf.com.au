@@ -17,7 +17,6 @@
 }
 
 html {
-  /* background-color: #FC4D1E; */
   font-size: 62.5%;
 }
 
@@ -46,6 +45,23 @@ a:active,
 button:focus,
 button:active {
   color: #00f;
+}
+
+h1, h2, h3, h4 {
+  font-size: 100%;
+  font-weight: normal;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  text-indent: 4rem;
+}
+
+h1 {
+  margin-top: 2.4rem;
+  text-indent: 0;
+}
+
+strong {
+  font-weight: normal
 }
 
 time, address {
@@ -311,4 +327,31 @@ input:active {
 }
 .sponsor:hover img {
   opacity: 1;
+}
+
+
+/* Article page */
+
+.row-article {
+  border-bottom: 2px solid;
+  padding-bottom: 8rem;
+}
+
+.meta {
+  display: block;
+  margin-top: 3rem;
+}
+
+.person {
+  display: flex;
+  border: 0;
+}
+.person .photo img {
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  max-width: 5rem;
+  flex: 0 0 5rem;
 }
