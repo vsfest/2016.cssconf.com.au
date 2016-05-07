@@ -21,6 +21,7 @@ html {
   font-size: 62.5%;
 }
 
+
 body {
   background-color: #fff;
   color: #FC4D1E;
@@ -28,8 +29,8 @@ body {
   font-size: 2.4rem;
   line-height: 1.35;
   margin: 0;
+  -webkit-text-size-adjust: 90%;
 }
-
 a {
   border-bottom: 2px solid;
   color: inherit;
@@ -89,16 +90,29 @@ sup {
   position: absolute;
 }
 
+@media screen and (max-width: 42.25rem) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
 form {
+  box-sizing: border-box;
   display: flex;
   margin: 0 0 2rem;
   width: 75%;
+}
+@media screen and (max-width: 48.75rem) {
+  form {
+    width: 98%;
+  }
 }
 
 input,
 button {
   background-color: transparent;
   border: 0;
+  border-radius: 0;
   border-bottom: 2px solid;
   box-shadow: none;
   color: inherit;
@@ -114,6 +128,7 @@ input {
 }
 button {
   cursor: pointer;
+  white-space: nowrap;
 }
 input:hover {
   color: #000;
@@ -206,6 +221,11 @@ input:active {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 42.25rem) {
+  .logo {
+    max-width: 90%;
+  }
+}
 
 
 
@@ -214,14 +234,19 @@ input:active {
   margin: 0 auto;
   max-width: 120rem;
   text-align: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .content-wrapper {
   margin-top: -16.5rem;
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 42.25rem) {
+  .content-wrapper {
+    margin-top: -24.5rem;
+  }
 }
 
 .row {
@@ -241,11 +266,16 @@ input:active {
 .title-content {
   flex: 2;
 }
+@media screen and (max-width: 42.25rem) {
+  .row {
+    display: block;
+  }
+}
 
 .list {
   border-top: 2px solid;
   border-bottom: 0;
-  display: block;
+  display: flex;
   /* margin-left: -19rem; */
   padding: 0.5rem 0;
 }
@@ -255,7 +285,7 @@ input:active {
 }
 .list time {
   display: inline-block;
-  width: 18rem;
+  flex: 0 0 16rem;
 }
 
 .sponsor {
