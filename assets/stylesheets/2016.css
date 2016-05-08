@@ -30,6 +30,27 @@ body {
   margin: 0;
   -webkit-text-size-adjust: 90%;
 }
+
+h1, h2, h3, h4 {
+  font-size: 100%;
+  font-weight: normal;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  text-indent: 4rem;
+}
+
+h1 {
+  margin-top: 2.4rem;
+  margin-bottom: 5rem;
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+strong {
+  font-weight: normal
+}
+
 a {
   border-bottom: 2px solid;
   color: inherit;
@@ -45,23 +66,6 @@ a:active,
 button:focus,
 button:active {
   color: #00f;
-}
-
-h1, h2, h3, h4 {
-  font-size: 100%;
-  font-weight: normal;
-  margin-bottom: 3rem;
-  margin-top: 5rem;
-  text-indent: 4rem;
-}
-
-h1 {
-  margin-top: 2.4rem;
-  text-indent: 0;
-}
-
-strong {
-  font-weight: normal
 }
 
 time, address {
@@ -339,7 +343,7 @@ input:active {
 
 .meta {
   display: block;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .person {
