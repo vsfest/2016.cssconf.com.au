@@ -167,3 +167,22 @@
     transition: opacity 350ms ease-in-out;
   }
 }
+
+.team-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: $break-mobile) {
+    display: block;
+  }
+  .person {
+    border-top: 2px solid;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    padding-right: 4rem;
+    padding-top: 0.5rem;
+    width: 50%;
+    @media screen and (max-width: $break-mobile) {
+      width: auto;
+    }
+  }
+}
