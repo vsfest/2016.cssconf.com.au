@@ -35,7 +35,7 @@ layout: default
   <div class="title-content">
     <p>
       {% for post in site.posts %}
-        <a href="{{ post.url }}" class="list">
+        <a href="{{ post.url | prepend: site.github.url }}" class="list">
           <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">&#8201;{{ post.date | date: "%b %d" }}</time>
           <span>{{ post.title }}</span>
         </a>
