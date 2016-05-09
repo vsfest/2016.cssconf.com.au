@@ -9,8 +9,8 @@
 title: "CSSConf Australia 2016"
 email: "team@cssconf.com.au"
 description: "A one day conference bringing together the designers and developers of the future of the web."
-baseurl: http://view-source.github.io/css-conf/
-# url: "http://2016.cssconf.com"
+baseurl: ""
+url: ""
 ticket_url: "http://ti.to/cssconf-au/2016/"
 
 # Build settings

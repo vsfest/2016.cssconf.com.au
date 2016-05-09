@@ -7,7 +7,7 @@ layout: default
     {% if page.author %}
       <span class="meta">
         <a class="person fox" href="http://twitter.com/{{ page.author.twitter }}">
-          <span class="photo"><img src="{{ '/assets/images/' | prepend: site.baseurl | append: page.author.photo }}" alt="Photo of {{ page.author.name }}"></span><br>
+          <span class="photo"><img src="{{ '/assets/images/' | prepend: site.github.url | append: page.author.photo }}" alt="Photo of {{ page.author.name }}"></span><br>
           <span>
             <span class="name">{{ page.author.name }}</span><br>
             <span class="twitters">{{ page.author.twitter }}</span>
