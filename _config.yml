@@ -6,12 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: CSSConf Australia 2016
-email: team@cssconf.com.au
-description: > # this means to ignore newlines until "baseurl:"
-  A one day conference bringing together the designers and developers of the future of the web.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://2016.cssconf.com" # the base hostname & protocol for your site
+title: "CSSConf Australia 2016"
+email: "team@cssconf.com.au"
+description: "A one day conference bringing together the designers and developers of the future of the web."
+baseurl: ""
+url: "http://2016.cssconf.com"
 ticket_url: "http://ti.to/cssconf-au/2016/"
 
 # Build settings
