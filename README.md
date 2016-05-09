@@ -2,7 +2,7 @@
 
 ## Setup
 ```
-gem install jekyll
+bundle install
 ```
 
 ## Running the app
