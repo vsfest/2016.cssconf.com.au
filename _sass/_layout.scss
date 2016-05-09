@@ -95,6 +95,7 @@
 }
 
 .content-wrapper {
+  margin-bottom: -12.5rem;
   margin-top: -12.5rem;
   position: relative;
   z-index: 1;
@@ -113,7 +114,9 @@
   &--footer {
     border-top: 2px solid;
     margin-top: 30rem;
+    margin-bottom: -12.5rem;
     font-size: 80%;
+    padding-bottom: 4rem;
   }
 }
 .title {
