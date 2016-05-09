@@ -92,7 +92,7 @@ sup {
   position: absolute;
 }
 
-@media screen and (max-width: 42.25rem) {
+@media screen and (max-width: $break-mobile) {
   .hide-mobile {
     display: none;
   }
@@ -104,7 +104,7 @@ form {
   margin: 0 0 2rem;
   width: 75%;
 }
-@media screen and (max-width: 48.75rem) {
+@media screen and (max-width: $break-form) {
   form {
     width: 98%;
   }

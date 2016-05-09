@@ -78,7 +78,7 @@
   top: 11rem;
   left: 50%;
   transform: translateX(-50%);
-  @media screen and (max-width: 42.25rem) {
+  @media screen and (max-width: $break-mobile) {
     max-width: 90%;
   }
 }
@@ -98,7 +98,7 @@
   margin-top: -12.5rem;
   position: relative;
   z-index: 1;
-  @media screen and (max-width: 42.25rem) {
+  @media screen and (max-width: $break-mobile) {
     margin-top: -24.5rem;
   }
 }
@@ -107,7 +107,7 @@
   display: flex;
   margin-bottom: 6rem;
   mix-blend-mode: multiply;
-  @media screen and (max-width: 42.25rem) {
+  @media screen and (max-width: $break-mobile) {
     display: block;
   }
   &--footer {
