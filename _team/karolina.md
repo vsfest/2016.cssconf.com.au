@@ -1,5 +1,5 @@
 ---
 name: 'Karolina Szczur'
-twitter: '@fox'
+twitter: 'fox'
 photo: 'mugshot-kazza.jpg'
 ---

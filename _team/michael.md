@@ -1,5 +1,5 @@
 ---
 name: 'Michael Mifsud'
-twitter: '@xzyfer'
+twitter: 'xzyfer'
 photo: 'mugshot-michael.jpg'
 ---

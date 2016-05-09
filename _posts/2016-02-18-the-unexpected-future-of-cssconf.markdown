@@ -2,7 +2,7 @@
 layout: post
 title:  "The unexpected future of CSSConf"
 date:   2016-02-18 09:37:14 +1000
-author: '@fox'
+author: 'fox'
 ---
 It's been almost a year since the [second edition of CSSConf AU](http://2015.cssconf.com.au/). From the first edition, the event grew exponentially—from a one day to a two day conference with 16 speakers, and featuring industry luminaries we all look up to. And from the very beginning, we were optimisitic of the positive impact that our work would have on the local community. That belief was reinforced multiple times by attendees, volunteers, and speakers and has kept us pushing forward. We are committed to building and sustainably growing the Australian tech community.
 
