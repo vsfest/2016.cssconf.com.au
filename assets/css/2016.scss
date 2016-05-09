@@ -1,0 +1,30 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Variables
+$primary: #FC4D1E;
+
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/Maison-Neue-Book.eot');
+  src: url('../fonts/Maison-Neue-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Maison-Neue-Book.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Maison Neue Mono';
+  src: url('../fonts/Maison-Neue-Mono.eot');
+  src: url('../fonts/Maison-Neue-Mono.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Maison-Neue-Mono.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base",
+        "layout",
+        "post";

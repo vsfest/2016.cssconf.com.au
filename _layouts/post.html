@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="row row-article">
+  <p class="title">
+    &#9679;<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">&#8201;{{ page.date | date: "%b %d" }}</time>
+    {% if page.author %}
+      <span class="meta">
+        <a class="person fox" href="http://twitter.com/{{ page.author.twitter }}">
+          <span class="photo"><img src="{{ '/assets/images/' | prepend: site.baseurl | append: page.author.photo }}" alt="Photo of {{ page.author.name }}"></span><br>
+          <span>
+            <span class="name">{{ page.author.name }}</span><br>
+            <span class="twitters">{{ page.author.twitter }}</span>
+          </span>
+        </a>
+      </span>
+    {% endif %}
+  </p>
+  <div class="title-content">
+    <h1>{{ page.title }}</h1>
+    <div class="body">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+{% include tickets.html %}
+
+{% include mailing-list.html %}
