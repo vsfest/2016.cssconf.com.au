@@ -12,6 +12,8 @@ description: "A one day conference bringing together the designers and developer
 baseurl: ""
 url: ""
 ticket_url: "http://ti.to/cssconf-au/2016/"
+collections:
+  - team
 
 # Build settings
 markdown: kramdown

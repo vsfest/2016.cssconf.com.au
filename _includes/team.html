@@ -1,0 +1,12 @@
+<div class="row">
+  <p class="title">
+    The team
+  </p>
+  <div class="title-content">
+    <p class="team-wrapper">
+      {% for person in site.team %}
+        {% include person.html %}
+      {% endfor %}
+    </p>
+  </div>
+</div>
