@@ -1,5 +1,6 @@
 .header {
   background: transparent url('../images/CSS-BG.png') 0 82% repeat-x;
+  background-position-x: 25%;
   background-size: calc(1480px * 0.7) calc(980px * 0.7);
   box-sizing: border-box;
   font-family: 'Maison Neue Mono', sans-serif;
@@ -127,7 +128,6 @@
   border-top: 2px solid;
   border-bottom: 0;
   display: flex;
-  /* margin-left: -19rem; */
   padding: 0.5rem 0;
   time:before {
     content: "\25CF";
@@ -135,6 +135,7 @@
   }
   time {
     display: inline-block;
+    margin-top: 0.25rem;
     flex: 0 0 16rem;
   }
 }
