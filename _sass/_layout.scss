@@ -168,6 +168,20 @@
   }
 }
 
+.person {
+  display: flex;
+  border: 0;
+  .photo img {
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    margin-right: 1rem;
+    margin-top: 0.75rem;
+    max-width: 5rem;
+    flex: 0 0 5rem;
+  }
+}
+
 .team-wrapper {
   display: flex;
   flex-wrap: wrap;
