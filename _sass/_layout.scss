@@ -72,14 +72,20 @@
   text-align: center;
 }
 .logo {
-  max-width: 50rem;
-  // mix-blend-mode: luminosity;
-  position: fixed;
-  top: 11rem;
   left: 50%;
+  max-width: 50rem;
+  position: fixed;
+  top: 13rem;
   transform: translateX(-50%);
   @media screen and (max-width: $break-mobile) {
     max-width: 90%;
+  }
+  path {
+    fill: #fff;
+    transition: fill 650ms ease-in-out;
+    .logo--bg & {
+      fill: #F2F2FF;
+    }
   }
 }
 
