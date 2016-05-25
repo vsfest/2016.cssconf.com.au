@@ -1,6 +1,7 @@
 .header {
-  background: transparent url('../images/CSS-BG.png') 0 82% repeat-x;
-  background-position-x: 25%;
+  // background: $primary url('../images/VS-BG.png') 0 82% repeat-x;
+  // background-blend-mode: screen;
+  // background-position-x: 25%;
   background-size: calc(1480px * 0.7) calc(980px * 0.7);
   box-sizing: border-box;
   font-family: 'Maison Neue Mono', sans-serif;
@@ -46,8 +47,9 @@
     background-color: rgba(255, 255, 255, 0);
     color: #fff;
     padding: 1.5rem 0;
-    transition: color 650ms ease-in-out,
-                background-color 650ms ease-in-out;
+    transition: color ease-in-out,
+                background-color ease-in-out;
+    transition-duration: 0ms;
     width: 100%;
     .header--fixed & {
     }
@@ -56,6 +58,7 @@
   &--fixed .header-inner {
     background-color: rgba(255, 255, 255, 1);
     color: $primary;
+    transition-duration: 650ms;
   }
 }
 
@@ -64,7 +67,8 @@
 
 
 .bg {
-  background: url('../images/CSS-BG.png') 0 0 repeat-x;
+  background: $primary url('../images/VS-BG.png') 0 0 repeat-x;
+  background-blend-mode: screen;
   background-size: calc(1480px * 0.7) calc(980px * 0.7);
   height: calc(980px * 0.7);
   image-rendering: pixelated;
