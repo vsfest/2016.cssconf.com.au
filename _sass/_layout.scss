@@ -1,7 +1,6 @@
 .header {
-  // background: $primary url('../images/VS-BG.png') 0 82% repeat-x;
-  // background-blend-mode: screen;
-  // background-position-x: 25%;
+  background: transparent url('../images/CSS-BG.png') 0 82% repeat-x;
+  background-position-x: 25%;
   background-size: calc(1480px * 0.7) calc(980px * 0.7);
   box-sizing: border-box;
   font-family: 'Maison Neue Mono', sans-serif;
@@ -88,7 +87,7 @@
     fill: #fff;
     transition: fill 650ms ease-in-out;
     .logo--bg & {
-      fill: #F2F2FF;
+      fill: mix($primary, #fff, 5%);
     }
   }
 }
