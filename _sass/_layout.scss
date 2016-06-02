@@ -66,8 +66,8 @@
 
 
 .bg {
-  background: $primary url('../images/VS-BG.png') 0 0 repeat-x;
-  background-blend-mode: screen;
+  background: transparent url('../images/CSS-BG.png') 0 0 repeat-x;
+  // background-blend-mode: screen;
   background-size: calc(1480px * 0.7) calc(980px * 0.7);
   height: calc(980px * 0.7);
   image-rendering: pixelated;
