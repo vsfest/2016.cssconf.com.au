@@ -29,13 +29,23 @@
     }
   }
 
-  .home-link a {
-    border: 0;
-    color: inherit;
-    &:hover {
-      border-bottom: 2px solid;
+  .home-link {
+    &:hover a {
+      display: inline-block;
+    }
+    a {
+      border-bottom: 2px solid transparent;
+      color: inherit;
+      display: none;
+      &:first-child {
+        display: inline-block;
+      }
+      &:hover {
+        border-bottom: 2px solid;
+      }
     }
   }
+
 
   .wrapper {
     display: flex;
