@@ -181,9 +181,13 @@
     position: absolute;
   }
   img {
-    max-width: 18rem;
+    max-height: 5rem;
     opacity: 0.75;
+    max-width: 100%;
     transition: opacity 350ms ease-in-out;
+  }
+  &--grand img {
+    max-height: 12rem;
   }
 }
 
