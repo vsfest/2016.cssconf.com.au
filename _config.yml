@@ -8,10 +8,15 @@
 # Site settings
 title: "CSSConf Australia 2016"
 email: "team@cssconf.com.au"
+sponsors_email: "sponsors@cssconf.com.au"
 description: "A one day conference bringing together the designers and developers of the future of the web."
 baseurl: ""
 url: ""
 ticket_url: "http://ti.to/cssconf-au/2016/"
+jsconf_url: "http://2016.jsconfau.com"
+cssconf_url: "http://2016.cssconf.com.au"
+decompress_url: "http://decompress.com.au"
+
 collections:
   - team
 
