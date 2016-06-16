@@ -1,20 +1,34 @@
 .home-link {
-  .header:hover & a {
-    display: inline-block;
-  }
+  display: inline-block;
   a {
+    @extend .faded;
     border-bottom: 2px solid transparent;
     color: inherit;
-    display: none;
+    margin-left: 2rem;
+    @media screen and (max-width: 1000px) {
+      span { display: none; }
+    }
+    &:before {
+      content: ' / ';
+      margin-left: -2rem;
+      position: absolute;
+    }
     &:first-child {
-      display: inline-block;
+      margin-left: 0;
+      opacity: 1;
+    }
+    &:first-child:before {
+      content: '';
     }
     &:hover {
       border-bottom: 2px solid;
+      opacity: 1;
     }
   }
 }
-
+.header-ticket-link {
+  float: right;
+}
 
 .header {
   background: transparent url('../images/CSS-BG.png') 0 82% repeat-x;
@@ -47,10 +61,10 @@
     }
   }
 
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
+  // .wrapper {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
 
   .header-inner {
     background-color: rgba(255, 255, 255, 0);
