@@ -93,7 +93,7 @@ sup {
 }
 
 @media screen and (max-width: $break-mobile) {
-  .hide-mobile {
+  .hide-mobile.hide-mobile {
     display: none;
   }
 }
