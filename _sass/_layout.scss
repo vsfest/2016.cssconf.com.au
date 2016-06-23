@@ -4,6 +4,7 @@
     @extend .faded;
     border-bottom: 2px solid transparent;
     color: inherit;
+    display: inline-block;
     margin-left: 2rem;
     @media screen and (max-width: 1000px) {
       span { display: none; }
