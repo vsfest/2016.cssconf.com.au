@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The unexpected future of CSSConf"
+title:  "The unexpected future of CSSConf AU"
 date:   2016-02-18 09:37:14 +1000
 author: 'fox'
 ---
