@@ -1,6 +1,18 @@
 .row-article {
   border-bottom: 2px solid;
   padding-bottom: 8rem;
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  li {
+    margin-bottom: 24px;
+  }
+  
+  h1 {
+    margin-bottom: 0;
+  }
 }
 
 .meta {
