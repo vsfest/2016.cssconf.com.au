@@ -1,17 +1,20 @@
 .row-article {
   border-bottom: 2px solid;
   padding-bottom: 8rem;
-  
+
   strong {
-    font-weight: bold;
+    // font-weight: bold;
   }
-  
+
   li {
     margin-bottom: 24px;
   }
-  
+
   h1 {
     margin-bottom: 0;
+    margin-top: 1.5em;
+    // font-weight: bold;
+    font-size: 1.2em;
   }
 }
 
