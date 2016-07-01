@@ -68,7 +68,7 @@ But we’re also asking people to anonymise their own proposal. This, we hope, w
 
 If your submission involves a company, person, project or something else that would personally identify you, we ask you to replace the real name with something like COMPANY_A, PERSON_B, PROJECT_C, etc. Our CFP form will detect these strings and give you the chance to describe the company in generic terms. For example:
 
-SCREENSHOT
+![example](/assets/images/cfp-example.png)
 
 We want you to think about the relevance of your experience to our audience. So describing your company as “Extremely well-known company. Makes a product almost everyone in the audience would use every day. People will be interested to see our internal process” is good, saying “A popular product company” is bad. Describing an open-source project as “A new way to handle front-end assets” is bad, saying “An open-source project most of the audience will have heard about but very few will have actually used yet” is good. A person might be “A prominent personality in the early days of the web. People in the audience will know who they are, and will be excited about the work I was able to do with them”
 
