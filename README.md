@@ -1,4 +1,4 @@
-# CSSConf 2016
+# CSSConf AU 2016
 
 ## Setup
 ```
