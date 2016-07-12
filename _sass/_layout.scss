@@ -86,7 +86,37 @@
   }
 }
 
-
+.cfp {
+  align-items: center;
+  background-color: #ff0;
+  border-radius: 50%;
+  display: flex;
+  font-family: 'Maison Neue Mono', sans-serif;
+  font-size: 80%;
+  height: 20rem;
+  justify-content: center;
+  left: 50%;
+  line-height: 1.45;
+  margin: 0;
+  margin-left: 23rem;
+  padding: 1rem;
+  position: absolute;
+  text-decoration: underline;
+  top: 10rem;
+  width: 20rem;
+  a {
+    border: 0;
+  }
+  @media screen and (max-width: 58.75rem) {
+    font-size: 60%;
+    margin-left: 0;
+    height: 12rem;
+    left: auto;
+    right: 0;
+    top: 6rem;
+    width: 12rem;
+  }
+}
 
 
 
