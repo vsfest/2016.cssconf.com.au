@@ -118,7 +118,15 @@
   }
 }
 
-
+.bg-alt {
+  background: transparent url('../images/CSS-BG.png') 0 0 repeat-x;
+  // background-blend-mode: screen;
+  background-size: calc(780px * 0.7) calc(180px * 0.7);
+  height: calc(180px * 0.7);
+  image-rendering: pixelated;
+  justify-content: space-around;
+  text-align: center;
+}
 
 .bg {
   background: transparent url('../images/CSS-BG.png') 0 0 repeat-x;
@@ -147,15 +155,22 @@
   }
 }
 
-
-
-
 .wrapper {
   margin: 0 auto;
   max-width: 120rem;
   text-align: left;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.content-wrapper-alt {
+  margin-bottom: -12.5rem;
+  margin-top: -2rem;
+  position: relative;
+  z-index: 1;
+  @media screen and (max-width: $break-mobile) {
+    margin-top: -4rem;
+  }
 }
 
 .content-wrapper {
