@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <div class="outer">
+    <div class="bg-alt">
+    </div>
+    <div class="wrapper content-wrapper-alt">
+
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+  </div>
+</body>
+<script src="{{ '/assets/js/2016.js' | prepend: site.github.url }}" type="text/javascript" charset="utf-8"></script>
+</html>
