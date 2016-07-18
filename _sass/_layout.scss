@@ -62,11 +62,6 @@
     }
   }
 
-  // .wrapper {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-
   .header-inner {
     background-color: rgba(255, 255, 255, 0);
     color: #fff;
@@ -75,11 +70,10 @@
                 background-color ease-in-out;
     transition-duration: 0ms;
     width: 100%;
-    .header--fixed & {
-    }
   }
 
-  &--fixed .header-inner {
+  &--fixed .header-inner,
+  &--permanent .header-inner {
     background-color: rgba(255, 255, 255, 1);
     color: $primary;
     transition-duration: 650ms;
@@ -118,24 +112,19 @@
   }
 }
 
-.bg-alt {
-  background: transparent url('../images/CSS-BG.png') 0 0 repeat-x;
-  // background-blend-mode: screen;
-  background-size: calc(780px * 0.7) calc(180px * 0.7);
-  height: calc(180px * 0.7);
-  image-rendering: pixelated;
-  justify-content: space-around;
-  text-align: center;
-}
-
 .bg {
   background: transparent url('../images/CSS-BG.png') 0 0 repeat-x;
   // background-blend-mode: screen;
-  background-size: calc(1480px * 0.7) calc(980px * 0.7);
-  height: calc(980px * 0.7);
+  background-size: calc(148rem * 0.7) calc(98rem * 0.7);
+  height: calc(98rem * 0.7);
   image-rendering: pixelated;
   justify-content: space-around;
   text-align: center;
+  &--alt {
+    background-position: 0 -42rem;
+    height: calc(30rem * 0.7);
+    margin-bottom: -10rem;
+  }
 }
 .logo {
   left: 50%;
@@ -152,6 +141,19 @@
     .logo--bg & {
       fill: mix($primary, #fff, 5%);
     }
+  }
+}
+
+.logo-inline {
+  margin-right: 4rem;
+  margin-top: 1rem;
+  max-width: 20rem;
+  @media screen and (max-width: $break-mobile) {
+    margin-top: -4rem;
+    margin-bottom: -2rem;
+  }
+  path {
+    fill: $primary;
   }
 }
 
@@ -210,6 +212,7 @@
   border-top: 2px solid;
   border-bottom: 0;
   display: flex;
+  margin: 0;
   padding: 0.5rem 0;
   time:before {
     content: "\25CF";
@@ -254,11 +257,13 @@
 .person {
   display: flex;
   border: 0;
+  span {
+    padding-right: 1rem;
+  }
   .photo img {
     border-radius: 50%;
     display: block;
     overflow: hidden;
-    margin-right: 1rem;
     margin-top: 0.75rem;
     max-width: 5rem;
     flex: 0 0 5rem;
@@ -268,7 +273,7 @@
 .team-wrapper {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (max-width: $break-mobile) {
+  @media screen and (max-width: $break-form) {
     display: block;
   }
   .person {
@@ -278,7 +283,7 @@
     padding-right: 4rem;
     padding-top: 0.5rem;
     width: 50%;
-    @media screen and (max-width: $break-mobile) {
+    @media screen and (max-width: $break-form) {
       width: auto;
     }
   }
