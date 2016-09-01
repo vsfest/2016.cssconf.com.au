@@ -19,6 +19,7 @@ decompress_url: "http://decompress.com.au"
 
 collections:
   - team
+  - speakers
 
 # Build settings
 markdown: kramdown
