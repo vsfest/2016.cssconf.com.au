@@ -40,7 +40,6 @@ GEM
       liquid (= 3.0.6)
       listen (= 3.0.6)
       mercenary (~> 0.3)
-      minima (= 1.0.1)
       rouge (= 1.11.1)
       terminal-table (~> 1.4)
     github-pages-health-check (1.2.0)
@@ -132,7 +131,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (= 93)
+  github-pages (= 89)
+  json
 
 BUNDLED WITH
    1.12.5
