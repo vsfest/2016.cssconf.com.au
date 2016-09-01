@@ -1,0 +1,11 @@
+<div class="speaker">
+  <div class="speaker-gutter">
+    <span class="photo"><img src="{{ '/assets/images/' | prepend: site.github.url | append: speaker.photo }}" alt="Photo of {{ speaker.name }}"></span>
+    <div class="details">
+      <span class="name">{{ speaker.name }}<sup>{{ speaker.country }}</sup></span>
+      <p class="bio">{{ speaker.bio }}</p>
+      <a class="website" href="http://{{ speaker.website }}">(www)</a>
+      <a class="twitters" href="http://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a>
+    </div>
+  </div>
+</div>

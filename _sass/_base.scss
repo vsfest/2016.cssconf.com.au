@@ -1,3 +1,6 @@
+$sans: 'Maison Neue', sans-serif;
+$mono: 'Maison Neue Mono', sans-serif;
+
 html {
   background-color: $primary;
   font-size: 62.5%;
@@ -6,7 +9,7 @@ html {
 body {
   background-color: #fff;
   color: $primary;
-  font-family: 'Maison Neue', sans-serif;
+  font-family: $sans;
   font-size: 2.4rem;
   letter-spacing: 0.05rem;
   line-height: 1.45;
@@ -27,6 +30,17 @@ h1 {
   text-indent: 0;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+}
+
+.speakers {
+  h1 {
+    text-align: center;
+    padding-bottom: 10rem;
+
+    @media(max-width: 480px) {
+      padding-top: 5rem;
+    }
+  }
 }
 
 a {
@@ -75,7 +89,7 @@ ul  {
 }
 
 time, address {
-  font-family: 'Maison Neue Mono', sans-serif;
+  font-family: $mono;
   font-size: 0.9em;
   font-style: normal;
 }
@@ -178,5 +192,3 @@ input:active {
 :-ms-input-placeholder {
   color: inherit;
 }
-
-
