@@ -270,6 +270,87 @@
   }
 }
 
+.speaker {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+
+  .speaker-gutter {
+    padding: 0 3rem;
+  }
+
+  span {
+    display: table;
+
+    &.name {
+      display: inline-block;
+    }
+  }
+
+  &:hover {
+    .photo img {
+      -webkit-filter: grayscale(100%);
+      mix-blend-mode: screen;
+    }
+  }
+
+  .details {
+    margin-top: 4rem;
+  }
+
+  a {
+    display: inline-block;
+    line-height: 1.5;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .name {
+    font-family: $mono;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    padding-bottom: 0.75rem;
+    // text-transform: uppercase;
+    letter-spacing: -0.05rem;
+    sup {
+      font-size: 1.4rem;
+      vertical-align: text-top;
+    }
+    // transform: translate(-1rem) rotate(270deg);
+    // transform-origin: bottom left;
+  }
+
+  .bio,
+  .website,
+  .twitters,
+  .em {
+    // font-family: $mono;
+    font-size: 1.8rem;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  .bio {
+    padding-bottom: 0.5rem;
+  }
+
+  .photo {
+    background-color: $primary;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+
+
+    img {
+    display: block;
+    width: 110%;
+    }
+  }
+}
+
 .team-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -285,6 +366,27 @@
     width: 50%;
     @media screen and (max-width: $break-form) {
       width: auto;
+    }
+  }
+}
+
+.speaker-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -3rem;
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+  .speaker {
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+    padding: 0.5rem 0;
+    width: calc(100% * 1 / 3);
+    @media screen and (max-width: $break-form) {
+      width: calc(100% * 1 / 2);
+    }
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
   }
 }
