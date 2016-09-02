@@ -6,6 +6,9 @@
 // Variables
 $primary: #FC4D1E;
 
+$sans: 'Maison Neue', sans-serif;
+$mono: 'Maison Neue Mono', sans-serif;
+
 $break-mobile: 42.25rem;
 $break-form: 48.75rem;
 
@@ -30,5 +33,4 @@ $break-form: 48.75rem;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base",
         "layout",
-        "post",
-        "flag-icon";
+        "post";
