@@ -298,6 +298,8 @@
 
     &:after {
       content: '???';
+      line-height: 1;
+      text-align: center;
       color: white;
       position: absolute;
       top: 50%;
