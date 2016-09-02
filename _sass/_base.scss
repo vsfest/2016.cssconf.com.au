@@ -1,6 +1,3 @@
-$sans: 'Maison Neue', sans-serif;
-$mono: 'Maison Neue Mono', sans-serif;
-
 html {
   background-color: $primary;
   font-size: 62.5%;
@@ -47,7 +44,7 @@ a {
   border-bottom: 2px solid;
   color: inherit;
   text-decoration: none;
-  transition: color 350ms ease-in-out;
+  transition: color 250ms ease-in-out;
   &.clean {
     border: 0;
   }
