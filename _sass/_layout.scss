@@ -287,6 +287,26 @@
     }
   }
 
+  .speaker-soon {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    background: $primary;
+    border-radius: 50%;
+    position: relative;
+
+    &:after {
+      content: '???';
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3em;
+    }
+  }
+
   &:hover {
     cursor: pointer;
     .photo {
@@ -344,9 +364,9 @@
     overflow: hidden;
     transition: background-color 200ms ease-in-out;
     img {
-    display: block;
-    max-width: 100%;
-    // transition: -webkit-filter 300ms ease-in-out;
+      display: block;
+      max-width: 100%;
+      // transition: -webkit-filter 300ms ease-in-out;
     }
   }
 }
