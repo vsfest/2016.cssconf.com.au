@@ -5,9 +5,9 @@ date:   2016-09-26 10:00:00 +1000
 author: 'fox'
 ---
 
-At CSSConf AU we're dedicated to diversity, inclusion and even more so—**opportunity**. We realize that buying a ticket to a conference for many isn't a trivial expense, but it can be a turning point in someone's career. 
+At CSSConf AU we're dedicated to diversity, inclusion and even more so—**opportunity**. We realise that buying a ticket to a conference for many isn't a trivial expense, but it can be a turning point in someone's career. 
 
-We're committed to bringing in as many individuals who couldn't attend otherwise as possible. We want you to feel like you belong. We want to build a lasting, inclusive, safe community. As organizers it's our responsibility to diversify the face of the Australian tech industry. 
+We're committed to bringing in as many individuals who couldn't attend otherwise as possible. We want you to feel like you belong. We want to build a lasting, inclusive, safe community. As organisers we see it as our  responsibility to help diversify the face of the Australian tech industry. 
 
 It's our pleasure to announce the Opportunity Program providing free passes to CSSConf AU 2016. Read along for eligibility requirements, application close an notification dates.
 
@@ -50,4 +50,4 @@ Thanks to generous support from Envato and Thick we will be able to give out *7 
 </a>  
 
 ## Thank you
-There are many (often uncredited) individuals tirelessly working on improving diversity and inclusion in tech, which is why we'd like to highlight that the work of [Ashe Dryden](https://twitter.com/ashedryden) continues to be an inspiration for our standards.
+Additionally, there are many (often uncredited) individuals tirelessly working on improving diversity and inclusion in tech, which is why we'd like to highlight that the work of [Ashe Dryden](https://twitter.com/ashedryden) continues to be an inspiration for our standards.
