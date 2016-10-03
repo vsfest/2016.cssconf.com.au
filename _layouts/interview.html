@@ -1,0 +1,26 @@
+---
+layout: interview
+---
+<div class="row row-avatar">
+  <figure class="photo"><img src="{{ '/assets/images/' | prepend: site.github.url | append: speaker.photo }}" alt="Photo of {{ speaker.name }}"></figure>
+</div>
+<div class="row row-article">
+  <p class="title">
+    {% assign author = site.interviews | where:"twitter",page.author %}
+    {% if author %}
+      {% for person in author %}
+        {% include interviewee.html %}
+      {% endfor %}
+    {% endif %}
+  </p>
+  <div class="title-content">
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d" }}</time>
+    <div class="body">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+{% include tickets.html %}
+
+{% include mailing-list.html %}

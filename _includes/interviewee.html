@@ -1,0 +1,7 @@
+<a class="person" href="http://twitter.com/{{ person.twitter }}">
+  <span class="photo"><img src="{{ '/assets/images/' | prepend: site.github.url | append: person.photo }}" alt="Photo of {{ person.name }}"></span><br>
+  <span>
+    <span class="name">{{ person.name }}</span><br>
+    <span class="twitters">@{{ person.twitter }}</span>
+  </span>
+</a>
