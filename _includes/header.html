@@ -1,10 +1,13 @@
-<div class="header-wrapper {{ include.classes | '' }}">
-    <div class="header">
-      <div class="buy-tickets"><a href="{{ site.ticket_url }}">Buy Tickets</a></div>
-      <div class="dates">
-        Nov 30&ndash;Dec 02, 2016
-      </div>
-      <div class="title">JS Conf/Decompress</div>
+<div class="header {{ include.classes | '' }}">
+  <div class="header-inner">
+    <div class="wrapper">
+      <!-- <p class="hide-me">View-Source<sup>01</sup></p> -->
+      <p class="home-link">
+        <a href="{{ '/' | prepend: site.github.url }}">CSSConf<span> — 30 Nov</span></a>
+        <a href="{{ site.jsconf_url }}" class="hide-mobile">JSConf<span> — 01 Dec</span></a>
+        <a href="{{ site.decompress_url }}" class="hide-mobile">Decompress<span> — 02 Dec</span></a>
+      </p>
+      <p class="header-ticket-link"><a href="{{ site.ticket_url }}">Buy Tickets</a></p>
     </div>
   </div>
 </div>

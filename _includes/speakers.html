@@ -1,11 +1,11 @@
 <div class="speakers">
   {% for speaker in site.speakers %}
-    {% if forloop.index == 4 %}
-      <div class="speaker"></div>
+    {% if forloop.index == 1 %}
+      <div class="speaker empty"></div>
     {% endif %}
-    {% if forloop.index == 8 %}
+    <!--{% if forloop.index == 8 %}
       <div class="speaker"></div>
-    {% endif %}
+    {% endif %}-->
     {% include speaker.html %}
   {% endfor %}
 </div>
