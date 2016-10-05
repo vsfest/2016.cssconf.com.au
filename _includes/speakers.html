@@ -1,10 +1,11 @@
-<div class="row speakers">
-  <div class="title-content">
-    <h1>SPEAKERS</h1>
-    <div class="speaker-wrapper">
-      {% for speaker in site.speakers %}
-        {% include speaker.html %}
-      {% endfor %}
-    </div>
-  </div>
+<div class="speakers">
+  {% for speaker in site.speakers %}
+    {% if forloop.index == 4 %}
+      <div class="speaker"></div>
+    {% endif %}
+    {% if forloop.index == 8 %}
+      <div class="speaker"></div>
+    {% endif %}
+    {% include speaker.html %}
+  {% endfor %}
 </div>

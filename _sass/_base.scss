@@ -29,22 +29,12 @@ h1 {
   letter-spacing: 0.3rem;
 }
 
-.speakers {
-  h1 {
-    text-align: center;
-    padding-bottom: 10rem;
-
-    @media(max-width: 480px) {
-      padding-top: 5rem;
-    }
-  }
-}
-
 a {
   border-bottom: 2px solid;
   color: inherit;
   text-decoration: none;
-  transition: color 250ms ease-in-out;
+  //transition: color 250ms ease-in-out;
+  //
   &.clean {
     border: 0;
   }
