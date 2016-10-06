@@ -3,6 +3,16 @@
 {% include head.html %}
 <body>
   {% include header.html classes="header--permanent" %}
+  <div class="intro">
+    <div class="logo">
+      <a href="{{ '/' | prepend: site.github.url }}">
+        {% include logo.svg %}
+      </a>
+    </div>
+    <div class="camo">
+      {% include camo.svg %}
+    </div>
+  </div>
   <div class="outer">
     <div class="bg bg--alt"></div>
     <div class="wrapper content-wrapper-alt">
@@ -13,5 +23,6 @@
     </div>
   </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js" type="text/javascript" charset="utf-8"></script>
 <script src="{{ '/assets/js/2016.js' | prepend: site.github.url }}" type="text/javascript" charset="utf-8"></script>
 </html>
