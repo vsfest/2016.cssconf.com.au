@@ -7,6 +7,8 @@ layout: default
     {% if author %}
       {% for person in author %}
         {% include person.html %}
+        <br>
+        {{ person.bio }}
       {% endfor %}
     {% endif %}
   </p>
