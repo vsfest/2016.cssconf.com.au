@@ -18,8 +18,13 @@ cssconf_url: "http://2016.cssconf.com.au"
 decompress_url: "http://decompress.com.au"
 
 collections:
-  - team
-  - speakers
+  interviews:
+    output: true
+    permalink: /interviews/:path/
+  team:
+    output: false
+  speakers:
+    output: false
 
 # Build settings
 markdown: kramdown

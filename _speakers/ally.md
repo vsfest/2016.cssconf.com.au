@@ -5,4 +5,5 @@ bio: 'is a senior front-end engineer making internet things at Vox Media. Loves 
 website: 'allypalanzi.github.io'
 twitter: 'mylifeasalllly'
 photo: 'speaker-ally.jpg'
+interview: 'nadieh-bremer'
 ---

@@ -1,4 +1,7 @@
 <div class="speaker">
+  {% if speaker.interview %}
+    <a class="speaker__link" href="interviews/{{speaker.interview}}"></a>
+  {% endif %}
   <div class="photo-wrapper">
     <div class="padder"></div>
     <div class="photo" style="background-image: url({{ '/assets/images/' | prepend: site.github.url | append: speaker.photo }});"></div>
