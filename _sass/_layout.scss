@@ -328,6 +328,9 @@
   flex: 2;
 }
 
+a.list {
+  border-color: black;
+}
 .list {
   border-top: 2px solid;
   border-bottom: 0;
@@ -338,7 +341,11 @@
     content: "\25CF";
     margin-right: 0.5rem;
   }
+  &--simple time:before {
+    display: none;
+  }
   time {
+    color: black;
     display: inline-block;
     margin-top: 0.25rem;
     flex: 0 0 16rem;
@@ -364,7 +371,7 @@
 
 .sponsor {
   border: 0;
-  border-top: 2px solid;
+  border-top: 2px solid black;
   display: block;
   padding: 1rem 0 1.5rem;
   &:hover {
@@ -401,9 +408,12 @@
     border-radius: 50%;
     display: block;
     overflow: hidden;
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     max-width: 5rem;
     flex: 0 0 5rem;
+  }
+  .name {
+    color: black;
   }
 }
 
@@ -415,11 +425,12 @@
     display: block;
   }
   .person {
-    border-top: 2px solid;
+    border-top: 2px solid black;
     box-sizing: border-box;
+    line-height: 1.2;
     margin-bottom: 2rem;
     padding-right: 4rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     width: 50%;
     @media screen and (max-width: $break-form) {
       width: auto;
