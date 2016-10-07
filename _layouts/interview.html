@@ -9,6 +9,8 @@ layout: subpage
         {% include person.html %}
         <br>
         {{ person.bio }}
+        <br>
+        <a class="website" href="http://{{ person.website }}" target="_blank">(www)</a>
       {% endfor %}
     {% endif %}
   </p>
