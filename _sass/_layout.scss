@@ -187,9 +187,13 @@
         border: 0;
       }
 
+      .photo-wrapper {
+        z-index: 11;
+      }
+
       &:hover {
         .photo-wrapper {
-          z-index: 11;
+          mix-blend-mode: multiply;
         }
 
         .photo-wrapper .photo-screen {
