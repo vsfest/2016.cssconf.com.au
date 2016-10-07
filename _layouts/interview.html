@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: subpage
 ---
 {% assign author = site.speakers | where:"name", page.interviewee %}
 <div class="row row-article">
@@ -9,6 +9,8 @@ layout: default
         {% include person.html %}
         <br>
         {{ person.bio }}
+        <br>
+        <a class="website" href="http://{{ person.website }}" target="_blank">(www)</a>
       {% endfor %}
     {% endif %}
   </p>

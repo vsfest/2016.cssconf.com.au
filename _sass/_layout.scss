@@ -32,9 +32,6 @@
 }
 
 .header {
-  background: transparent url('../images/CSS-BG.png') 0 82% repeat-x;
-  background-position-x: 25%;
-  background-size: calc(1480px * 0.7) calc(980px * 0.7);
   box-sizing: border-box;
   font-family: 'Maison Neue Mono', sans-serif;
   font-size: 0.9em;
@@ -43,7 +40,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 15;
   a {
     transition: none;
   }
@@ -63,8 +60,8 @@
   }
 
   .header-inner {
-    background-color: rgba(255, 255, 255, 0);
-    color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
     padding: 1.5rem 0;
     transition: color ease-in-out,
                 background-color ease-in-out;
@@ -112,62 +109,253 @@
   }
 }
 
-.bg {
-  background: transparent url('../images/CSS-BG.png') 0 0 repeat-x;
-  // background-blend-mode: screen;
-  background-size: calc(148rem * 0.7) calc(98rem * 0.7);
-  height: calc(98rem * 0.7);
-  image-rendering: pixelated;
-  justify-content: space-around;
-  text-align: center;
-  &--alt {
-    background-position: 0 -42rem;
-    height: calc(30rem * 0.7);
-    margin-bottom: -10rem;
+.intro {
+  position: relative;
+  padding-top: 10rem;
+
+  .logo {
+    position: relative;
+    width: 43rem;
+    margin: 0 auto;
+    padding-bottom: 4.5rem;
+    z-index: 10;
+
+    @media (max-width: 550px) {
+      width: 75vw;
+    }
+
+    a {
+      border: 0;
+    }
+
+    svg {
+      path, text {
+        fill: $primary;
+      }
+
+      &:hover {
+        path, text {
+          fill: #000;
+        }
+      }
+    }
   }
-}
-.logo {
-  left: 50%;
-  max-width: 50rem;
-  position: fixed;
-  top: 13rem;
-  transform: translateX(-50%);
-  @media screen and (max-width: $break-mobile) {
-    max-width: 90%;
+
+  .speakers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; //162rem;
+    max-width: 180rem;
+    text-align: left;
+    padding: 0 2.5rem;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+    .speaker {
+      position: relative;
+      display: flex;
+      flex: 0 0 calc(100% / 3);
+
+      &:nth-child(n + 4) {
+        left: calc(100% / 6); 
+      }
+
+      &:nth-child(n + 7) {
+        left: 0;
+      }
+
+      &:nth-child(n + 10) {
+        left: calc(100% / 6); 
+      }
+
+      &:nth-child(6) {
+        .details-wrapper {
+          position: relative;
+          left: calc(100% * -1); 
+        }
+      }
+
+      &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        border: 0;
+      }
+
+      .photo-wrapper {
+        z-index: 11;
+      }
+
+      &:hover {
+        .photo-wrapper {
+          mix-blend-mode: multiply;
+        }
+
+        .photo-wrapper .photo-screen {
+          display: block;
+        } 
+
+        .details-wrapper {
+          opacity: 1;
+        }
+
+        @media (max-width: 1260px) {
+          .details-wrapper {
+            display: none;
+          }
+        }
+      }
+
+      @media (max-width: 900px) {
+        flex: 0 0 calc(100% / 2);
+
+        &:nth-child(n) {
+          left: 0;
+
+          .details-wrapper {
+            left: 0;
+          }
+        }
+
+        &:nth-child(3n + 1) {
+          left: calc(100% / 4);
+        }
+
+        &.empty {
+          display: none;
+        }
+      }
+
+      @media (max-width: 700px) {
+        flex: 0 0 calc(100% / 2);
+
+        &:nth-child(n) {
+          left: 0;
+        }
+
+        &.empty {
+          display: block;
+        }
+
+        .photo-wrapper {
+          flex: 0 0 100%;
+        }
+      }
+
+      div {
+        flex: 0 0 50%;
+      }
+
+      .photo-wrapper {
+        position: relative;
+
+        .padder {
+          margin-top: 100%;  
+        }
+
+        .photo {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-position: top center;
+          background-size: cover;
+          filter: grayscale(1);
+        }
+
+        .photo-screen {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba($primary, 1);
+          mix-blend-mode: screen;
+        }
+      }
+
+      .details-wrapper {
+        position: relative;
+        background-color: #FFF;
+        opacity: 0;
+        z-index: 10;
+
+        .padder {
+          margin-top: 100%;  
+        }
+
+        .details {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          line-height: 1.3;
+          padding: 1rem;
+          box-sizing: border-box;
+          overflow: hidden;
+
+          @media (min-width: 1400px) {
+            font-size: 1vw;
+            .name {
+              font-size: 1.1vw;
+            }
+          }
+          @media (max-width: 1400px) {
+            font-size: 1.4rem;
+            p {
+              margin: 0.5rem 0;
+            }
+            .name {
+              font-size: 1.5rem;
+            }
+          }
+
+          p {
+            margin: 0.7rem 0;
+          }
+        }
+      }
+    }
   }
-  path {
-    fill: #fff;
-    transition: fill 650ms ease-in-out;
-    .logo--bg & {
-      fill: mix($primary, #fff, 5%);
+
+  .camo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      circle {
+        fill: #000;
+      }
     }
   }
 }
 
-.logo-inline {
-  margin-right: 4rem;
-  margin-top: 1rem;
-  max-width: 20rem;
-  @media screen and (max-width: $break-mobile) {
-    margin-top: -4rem;
-    margin-bottom: -2rem;
-  }
-  path {
-    fill: $primary;
-  }
-}
-
 .wrapper {
-  margin: 0 auto;
   max-width: 120rem;
   text-align: left;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding:  0 2.5rem;
+  margin: 0 auto;
 }
 
 .content-wrapper-alt {
   margin-bottom: -12.5rem;
-  margin-top: -2rem;
+  margin-top: 4rem;
   position: relative;
   z-index: 1;
   @media screen and (max-width: $break-mobile) {
@@ -176,13 +364,8 @@
 }
 
 .content-wrapper {
-  margin-bottom: -12.5rem;
-  margin-top: -12.5rem;
   position: relative;
   z-index: 1;
-  @media screen and (max-width: $break-mobile) {
-    margin-top: -24.5rem;
-  }
 }
 
 .row {
@@ -208,6 +391,9 @@
   flex: 2;
 }
 
+a.list {
+  border-color: black;
+}
 .list {
   border-top: 2px solid;
   border-bottom: 0;
@@ -218,7 +404,11 @@
     content: "\25CF";
     margin-right: 0.5rem;
   }
+  &--simple time:before {
+    display: none;
+  }
   time {
+    color: black;
     display: inline-block;
     margin-top: 0.25rem;
     flex: 0 0 16rem;
@@ -244,7 +434,7 @@
 
 .sponsor {
   border: 0;
-  border-top: 2px solid;
+  border-top: 2px solid black;
   display: block;
   padding: 1rem 0 1.5rem;
   &:hover {
@@ -281,92 +471,15 @@
     border-radius: 50%;
     display: block;
     overflow: hidden;
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     max-width: 5rem;
     flex: 0 0 5rem;
   }
-}
-
-.speaker {
-  border: 0;
-  display: flex;
-  flex-direction: column;
-
-  .speaker-gutter {
-    padding: 0 3rem;
-  }
-
-  span {
-    display: table;
-
-    &.name {
-      display: inline-block;
-    }
-  }
-
-  &:hover {
-    cursor: pointer;
-    .photo {
-      background-color: $primary;
-
-      img {
-        mix-blend-mode: screen;
-        -webkit-filter: grayscale(100%);
-      }
-    }
-  }
-
-  .details {
-    margin-top: 4rem;
-  }
-
-  a {
-    display: inline-block;
-    line-height: 1.5;
-    border-bottom: 2px solid transparent;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
   .name {
-    font-family: $mono;
-    font-size: 2.4rem;
-    line-height: 1.2;
-    padding-bottom: 0.75rem;
-    letter-spacing: -.05rem;
-    sup {
-      font-size: 1.4rem;
-      vertical-align: text-top;
-    }
-  }
-
-  .bio,
-  .website,
-  .twitters,
-  .em {
-    font-size: 1.6rem;
-    line-height: 1.35;
-    margin: 0;
-  }
-
-  .bio {
-    padding-bottom: 0.5rem;
-  }
-
-  .photo {
-    border-radius: 50%;
-    display: block;
-    overflow: hidden;
-    transition: background-color 200ms ease-in-out;
-    img {
-      display: block;
-      max-width: 100%;
-      // transition: -webkit-filter 300ms ease-in-out;
-    }
+    color: black;
   }
 }
+
 
 .team-wrapper {
   display: flex;
@@ -375,11 +488,12 @@
     display: block;
   }
   .person {
-    border-top: 2px solid;
+    border-top: 2px solid black;
     box-sizing: border-box;
+    line-height: 1.2;
     margin-bottom: 2rem;
     padding-right: 4rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     width: 50%;
     @media screen and (max-width: $break-form) {
       width: auto;
