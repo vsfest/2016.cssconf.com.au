@@ -205,6 +205,11 @@
         }
 
         @media (max-width: 1260px) {
+          .bio {
+            display: none;
+          }
+        }
+        @media (max-width: $break-mobile) {
           .details-wrapper {
             display: none;
           }
@@ -400,6 +405,9 @@ a.list {
   display: flex;
   margin: 0;
   padding: 0.5rem 0;
+  &--inline {
+    display: block;
+  }
   time:before {
     content: "\25CF";
     margin-right: 0.5rem;
@@ -412,6 +420,11 @@ a.list {
     display: inline-block;
     margin-top: 0.25rem;
     flex: 0 0 16rem;
+    @media (max-width: $break-mobile) {
+      flex: 0 0 0;
+      white-space: nowrap;
+      padding-right: 2rem;
+    }
   }
 }
 
