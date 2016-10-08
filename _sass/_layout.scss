@@ -129,8 +129,10 @@
     }
 
     svg {
+      max-width: 100%;
       path, text {
         fill: $primary;
+        mix-blend-mode: multiply;
       }
 
       &:hover {
