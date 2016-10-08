@@ -1,0 +1,36 @@
+.row-avatar {
+  margin-bottom: 2rem;
+
+  figure {
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: .2rem;
+    width: 33%;
+
+    img {
+      border-radius: 50%;
+    }  
+  }
+}
+
+.row-article {
+  border-bottom: 2px solid;
+  padding-bottom: 8rem;
+
+  .title-content {
+    > h1 {
+      margin-top: 0;
+    }
+    > time {
+      display: block;
+      margin-top: -0.75rem;
+    }
+  }
+}
+
+.meta {
+  display: block;
+  margin-top: 5rem;
+}

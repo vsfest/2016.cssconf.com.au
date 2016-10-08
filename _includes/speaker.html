@@ -1,6 +1,10 @@
 <div class="speaker">
   <div class="speaker-gutter">
-    <span class="photo"><img src="{{ '/assets/images/' | prepend: site.github.url | append: speaker.photo }}" alt="Photo of {{ speaker.name }}"></span>
+    {% if speaker.interview %}
+      <a class="photo" href="interviews/{{speaker.interview}}"><img src="{{ '/assets/images/' | prepend: site.github.url | append: speaker.photo }}" alt="Photo of {{ speaker.name }}"></a>
+    {% else %}
+      <span class="photo"><img src="{{ '/assets/images/' | prepend: site.github.url | append: speaker.photo }}" alt="Photo of {{ speaker.name }}"></span>
+    {% endif %}
     <div class="details">
       <span class="name">{{ speaker.name }}<sup>{{ speaker.country }}</sup></span>
       <p class="bio">{{ speaker.bio }}</p>
