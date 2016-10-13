@@ -204,6 +204,7 @@
 
         .details-wrapper {
           opacity: 1;
+          z-index: 50;
         }
 
         @media (max-width: 1260px) {
