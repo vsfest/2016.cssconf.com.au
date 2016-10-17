@@ -1,8 +1,8 @@
 ---
 layout: interview
 title:  "A moment with Nadieh Bremer"
-date:   2016-02-18 09:37:14 +1000
-interviewee: 'Ally Palanzi'
+date:   2016-10-17 20:37:14 +1000
+interviewee: "Nadieh Bremer"
 ---
 
 __[Q] Do you sky-dive, knit, play the banjo, cycle or do anything that isn't on a computer?__
