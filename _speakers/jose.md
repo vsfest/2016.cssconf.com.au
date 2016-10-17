@@ -5,4 +5,5 @@ bio: 'is a web developer at Spotify. He loves making sites accessible and fast f
 website: 'jmperezperez.com'
 twitter: 'jmperezperez'
 photo: 'speaker-jose.jpg'
+interview: 'jose-perez'
 ---
