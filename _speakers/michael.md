@@ -5,4 +5,5 @@ bio: 'runs a small dev team in Texas. Code is his happy place. He wants to be a 
 twitter: 'michaelrog'
 website: 'michaelrog.com'
 photo: 'speaker-michael.jpg'
+interview: 'michael-rog'
 ---

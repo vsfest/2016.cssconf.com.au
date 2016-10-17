@@ -5,4 +5,5 @@ bio: 'builds design frameworks at BNZ Digital. She is an ex-physicist, hacker at
 website: 'serena.nz'
 twitter: 'sereeena'
 photo: 'speaker-serena.jpg'
+interview: 'serena-chen'
 ---

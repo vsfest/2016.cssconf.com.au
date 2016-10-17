@@ -5,4 +5,5 @@ bio: 'is a Graduated Astronomer, turned Data Scientist, turned self-taught Data 
 twitter: 'NadiehBremer'
 website: 'visualcinnamon.com'
 photo: 'speaker-nadieh.jpeg'
+interview: 'nadieh-bremer'
 ---
