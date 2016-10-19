@@ -5,4 +5,5 @@ bio: 'is a London-based full-stack developer, entrepreneur and web tech speaker.
 twitter: 'GoFoolhardy'
 website: 'http://github.com/barakchamo'
 photo: 'speaker-barak.png'
+interview: 'barak-chamo'
 ---
