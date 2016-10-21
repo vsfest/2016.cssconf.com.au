@@ -5,4 +5,5 @@ bio: 'works with fantastic X-Team colleagues around the world, and loves learnin
 website: 'http://github.com/joshwnj'
 twitter: 'joshwnj'
 photo: 'speaker-josh.jpg'
+interview: 'josh-johnston'
 ---
