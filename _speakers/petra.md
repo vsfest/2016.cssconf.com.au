@@ -5,4 +5,5 @@ bio: 'AKA Petch. A front-end developer living in sunny Sydney, building products
 website: 'github.com/petronbot'
 twitter: 'petronbot'
 photo: 'speaker-petra.jpg'
+interview: 'petra-gulicher'
 ---
