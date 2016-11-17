@@ -25,6 +25,9 @@ collections:
     output: false
   speakers:
     output: false
+  codeofconduct:
+    output: true
+    permalink: /codeofconduct/
 
 # Build settings
 markdown: kramdown
