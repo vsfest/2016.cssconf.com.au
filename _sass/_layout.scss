@@ -550,3 +550,11 @@ a.list {
     }
   }
 }
+
+#hero {
+  background-color: rgba(255, 255, 255, .95);
+  margin: 0 auto;
+  padding: 1rem 2.5rem 0;
+  position: relative;
+  z-index: 99;
+}
