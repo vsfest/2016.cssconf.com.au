@@ -558,9 +558,35 @@ a.list {
 }
 
 #hero {
-  background-color: rgba(255, 255, 255, .95);
-  margin: 0 auto;
-  padding: 1rem 2.5rem 0;
-  position: relative;
-  z-index: 99;
+	background-color: rgba(255, 255, 255, .95);
+	margin: 0 auto;
+	padding: 1rem 2.5rem 0;
+	position: relative;
+	z-index: 99;
+}
+
+#video {
+	background-color: rgba(255, 255, 255, .95);
+    position: relative;
+    padding: 2.5rem 2.5rem 1rem;
+    z-index: 99;
+
+	.row {
+		margin-bottom: 0;
+	}
+}
+
+#screen {
+	height: 0;
+	padding-bottom: 56.25%; /* 16:9 */
+	position: relative;
+	max-width: 64rem;
+
+	iframe {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
 }
